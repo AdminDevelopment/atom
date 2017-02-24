@@ -76,6 +76,12 @@ describe('TextEditorComponent', () => {
     ])
   })
 
+  ffit('bases the width of the lines div on the width of the longest initially-visible screen line', () => {
+    const {component, element, editor} = buildComponent({rowsPerTile: 3, height: 50})
+    debugger
+
+  })
+
   it('gives the line number gutter an explicit width and height so its layout can be strictly contained', () => {
     const {component, element, editor} = buildComponent({rowsPerTile: 3})
 
